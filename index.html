@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
+<body data-page="beranda">
     <div class="app-container">
         <aside class="sidebar">
             <div class="sidebar-header">
@@ -18,11 +18,12 @@
                 <p class="logo-subtitle">kedai sismic</p>
             </div>
             <nav class="sidebar-nav">
-                <a href="#beranda" class="nav-link active"><i class="fas fa-home"></i> Beranda</a>
-                <a href="#makanan" class="nav-link"><i class="fas fa-utensils"></i> Makanan</a>
-                <a href="#minuman" class="nav-link"><i class="fas fa-coffee"></i> Minuman</a>
-                <a href="#snack" class="nav-link"><i class="fas fa-cookie-bite"></i> Snack</a>
-                <a href="#payment" class="nav-link"><i class="fas fa-credit-card"></i> Payment</a>
+                <a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Beranda</a>
+                <a href="makanan.html" class="nav-link"><i class="fas fa-utensils"></i> Makanan</a>
+                <a href="minuman.html" class="nav-link"><i class="fas fa-coffee"></i> Minuman</a>
+                <a href="snack.html" class="nav-link"><i class="fas fa-cookie-bite"></i> Snack</a>
+                <a href="menu.html" class="nav-link"><i class="fas fa-plus"></i> Tambah Menu</a>
+                <a href="payment.html" class="nav-link"><i class="fas fa-credit-card"></i> Payment</a>
             </nav>
             <div class="sidebar-footer">
                 <p>copyright 2025 @kenic</p>
@@ -41,10 +42,200 @@
             </header>
             
             <div class="page-content" id="page-content">
+                <h2>Selamat Datang di KENIC!</h2>
+                <div class="menu-grid">
+                    <div class="product-card">
+                        <div class="best-seller-badge">Best Seller</div>
+                        <img src="add image" alt="Mie Ayam Spesial">
+                        <h3>Mie Ayam Spesial</h3>
+                        <p class="price">Rp12.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="1">-</button>
+                            <span class="quantity" id="quantity-1">0</span>
+                            <button class="plus-btn" data-id="1">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="best-seller-badge">Best Seller</div>
+                        <img src="add image" alt="Nasi Goreng Gila">
+                        <h3>Nasi Goreng Gila</h3>
+                        <p class="price">Rp15.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="2">-</button>
+                            <span class="quantity" id="quantity-2">0</span>
+                            <button class="plus-btn" data-id="2">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="best-seller-badge">Best Seller</div>
+                        <img src="add image" alt="Es Teh Manis">
+                        <h3>Es Teh Manis</h3>
+                        <p class="price">Rp5.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="7">-</button>
+                            <span class="quantity" id="quantity-7">0</span>
+                            <button class="plus-btn" data-id="7">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="best-seller-badge">Best Seller</div>
+                        <img src="add image" alt="Jus Alpukat">
+                        <h3>Jus Alpukat</h3>
+                        <p class="price">Rp10.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="8">-</button>
+                            <span class="quantity" id="quantity-8">0</span>
+                            <button class="plus-btn" data-id="8">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="best-seller-badge">Best Seller</div>
+                        <img src="add image" alt="Pisang Goreng Crispy">
+                        <h3>Pisang Goreng Crispy</h3>
+                        <p class="price">Rp8.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="9">-</button>
+                            <span class="quantity" id="quantity-9">0</span>
+                            <button class="plus-btn" data-id="9">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="best-seller-badge">Best Seller</div>
+                        <img src="add image" alt="Kentang Goreng">
+                        <h3>Kentang Goreng</h3>
+                        <p class="price">Rp10.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="10">-</button>
+                            <span class="quantity" id="quantity-10">0</span>
+                            <button class="plus-btn" data-id="10">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="best-seller-badge">Best Seller</div>
+                        <img src="add image" alt="Ayam Geprek Pedas">
+                        <h3>Ayam Geprek Pedas</h3>
+                        <p class="price">Rp16.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="3">-</button>
+                            <span class="quantity" id="quantity-3">0</span>
+                            <button class="plus-btn" data-id="3">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Bakso Urat Jumbo">
+                        <h3>Bakso Urat Jumbo</h3>
+                        <p class="price">Rp18.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="4">-</button>
+                            <span class="quantity" id="quantity-4">0</span>
+                            <button class="plus-btn" data-id="4">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Sate Ayam Madura">
+                        <h3>Sate Ayam Madura</h3>
+                        <p class="price">Rp20.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="5">-</button>
+                            <span class="quantity" id="quantity-5">0</span>
+                            <button class="plus-btn" data-id="5">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Gado-gado Komplit">
+                        <h3>Gado-gado Komplit</h3>
+                        <p class="price">Rp14.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="6">-</button>
+                            <span class="quantity" id="quantity-6">0</span>
+                            <button class="plus-btn" data-id="6">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Kopi Hitam">
+                        <h3>Kopi Hitam</h3>
+                        <p class="price">Rp6.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="11">-</button>
+                            <span class="quantity" id="quantity-11">0</span>
+                            <button class="plus-btn" data-id="11">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Es Jeruk">
+                        <h3>Es Jeruk</h3>
+                        <p class="price">Rp7.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="12">-</button>
+                            <span class="quantity" id="quantity-12">0</span>
+                            <button class="plus-btn" data-id="12">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Es Campur">
+                        <h3>Es Campur</h3>
+                        <p class="price">Rp12.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="13">-</button>
+                            <span class="quantity" id="quantity-13">0</span>
+                            <button class="plus-btn" data-id="13">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Cendol Elizabeth">
+                        <h3>Cendol Elizabeth</h3>
+                        <p class="price">Rp11.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="14">-</button>
+                            <span class="quantity" id="quantity-14">0</span>
+                            <button class="plus-btn" data-id="14">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Roti Bakar Coklat">
+                        <h3>Roti Bakar Coklat</h3>
+                        <p class="price">Rp9.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="15">-</button>
+                            <span class="quantity" id="quantity-15">0</span>
+                            <button class="plus-btn" data-id="15">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Tahu Walik">
+                        <h3>Tahu Walik</h3>
+                        <p class="price">Rp7.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="16">-</button>
+                            <span class="quantity" id="quantity-16">0</span>
+                            <button class="plus-btn" data-id="16">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Cireng Bumbu Rujak">
+                        <h3>Cireng Bumbu Rujak</h3>
+                        <p class="price">Rp8.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="17">-</button>
+                            <span class="quantity" id="quantity-17">0</span>
+                            <button class="plus-btn" data-id="17">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Seblak Ceker">
+                        <h3>Seblak Ceker</h3>
+                        <p class="price">Rp13.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="18">-</button>
+                            <span class="quantity" id="quantity-18">0</span>
+                            <button class="plus-btn" data-id="18">+</button>
+                        </div>
+                    </div>
                 </div>
+            </div>
         </main>
     </div>
 
-    <script src="script.js"></script>
+
 </body>
 </html>
