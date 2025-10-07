@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KENIC - Snack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body data-page="snack">
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">KENIC</h1>
+                <p class="logo-subtitle">kedai sismic</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Beranda</a>
+                <a href="makanan.html" class="nav-link"><i class="fas fa-utensils"></i> Makanan</a>
+                <a href="minuman.html" class="nav-link"><i class="fas fa-coffee"></i> Minuman</a>
+                <a href="snack.html" class="nav-link active"><i class="fas fa-cookie-bite"></i> Snack</a>
+                <a href="menu.html" class="nav-link"><i class="fas fa-plus"></i> Tambah Menu</a>
+                <a href="payment.html" class="nav-link"><i class="fas fa-credit-card"></i> Payment</a>
+            </nav>
+            <div class="sidebar-footer">
+                <p>copyright 2025 @kenic</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="search" placeholder="Search disini...">
+                </div>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </header>
+            
+            <div class="page-content" id="page-content">
+                <h2>Menu Snack</h2>
+                <div class="menu-grid">
+                    <div class="product-card">
+                        <div class="best-seller-badge">Best Seller</div>
+                        <img src="add image" alt="Pisang Goreng Crispy">
+                        <h3>Pisang Goreng Crispy</h3>
+                        <p class="price">Rp8.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="9">-</button>
+                            <span class="quantity" id="quantity-9">0</span>
+                            <button class="plus-btn" data-id="9">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="best-seller-badge">Best Seller</div>
+                        <img src="add image" alt="Kentang Goreng">
+                        <h3>Kentang Goreng</h3>
+                        <p class="price">Rp10.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="10">-</button>
+                            <span class="quantity" id="quantity-10">0</span>
+                            <button class="plus-btn" data-id="10">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Roti Bakar Coklat">
+                        <h3>Roti Bakar Coklat</h3>
+                        <p class="price">Rp9.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="15">-</button>
+                            <span class="quantity" id="quantity-15">0</span>
+                            <button class="plus-btn" data-id="15">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Tahu Walik">
+                        <h3>Tahu Walik</h3>
+                        <p class="price">Rp7.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="16">-</button>
+                            <span class="quantity" id="quantity-16">0</span>
+                            <button class="plus-btn" data-id="16">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Cireng Bumbu Rujak">
+                        <h3>Cireng Bumbu Rujak</h3>
+                        <p class="price">Rp8.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="17">-</button>
+                            <span class="quantity" id="quantity-17">0</span>
+                            <button class="plus-btn" data-id="17">+</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="add image" alt="Seblak Ceker">
+                        <h3>Seblak Ceker</h3>
+                        <p class="price">Rp13.000</p>
+                        <div class="controls">
+                            <button class="minus-btn" data-id="18">-</button>
+                            <span class="quantity" id="quantity-18">0</span>
+                            <button class="plus-btn" data-id="18">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+</body>
+</html>
