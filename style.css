@@ -208,7 +208,7 @@ body {
     gap: 1rem;
 }
 
-.controls button {
+.plus-btn, .minus-btn {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
@@ -220,7 +220,7 @@ body {
     transition: background-color 0.2s;
 }
 
-.controls button:hover {
+.plus-btn:hover, .minus-btn:hover {
     background-color: #2980b9;
 }
 
@@ -298,6 +298,29 @@ body {
     background-color: #27ae60;
 }
 
+.checkout-btn {
+    background: linear-gradient(45deg, var(--secondary-color), #27ae60);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.checkout-btn:hover {
+    background: linear-gradient(45deg, #27ae60, var(--secondary-color));
+}
+
+.checkout-btn:disabled {
+    background: #ccc;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
 .empty-cart {
     text-align: center;
     font-size: 1.2rem;
@@ -307,6 +330,145 @@ body {
 .empty-cart i {
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+/* Menu Addition Page */
+.menu-add-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.add-section {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    text-align: center;
+}
+
+.add-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.add-section h3 i {
+    margin-right: 10px;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.add-form label {
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.add-form input,
+.add-form textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.add-form input:focus,
+.add-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.add-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.add-btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
+}
+
+.add-btn:hover {
+    background-color: #27ae60;
+}
+
+.note {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    color: #856404;
+    text-align: center;
+}
+
+.note p {
+    font-weight: 500;
+}
+
+/* Order Button and Summary */
+.order-btn {
+    cursor: pointer;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.order-btn:hover {
+    background-color: #2980b9;
+}
+
+.order-summary {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+input[type="checkbox"]:checked + .order-btn + .order-summary {
+    display: block;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.order-summary textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
 }
 
 /* Responsive Design */
@@ -320,7 +482,7 @@ body {
         z-index: 1000;
         box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
-    
+
     .sidebar.open {
         transform: translateX(0);
     }
@@ -328,7 +490,7 @@ body {
     .main-content {
         padding: 1rem;
     }
-    
+
     .menu-toggle {
         display: block;
         z-index: 1001;
@@ -340,4 +502,12 @@ body {
         background: var(--background-color);
         padding-bottom: 1rem;
     }
-}
+
+    .menu-add-sections {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .add-section {
+        padding: 1.5rem;
+    }
